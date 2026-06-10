@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Farm Website</title>
+</head>
+<body>
+  <h1>🌱 Welcome to Farming Website</h1>
+  <p>Fresh organic food directly from farm</p>
+</body>
+</html>
