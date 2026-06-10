@@ -1,1 +1,26 @@
+version: 0.2
 
+phases:
+  install:
+    runtime-versions:
+      nodejs: 18
+
+  pre_build:
+    commands:
+      - echo "Preparing build environment..."
+
+  build:
+    commands:
+      - echo "No build step needed for static HTML site"
+
+  post_build:
+    commands:
+      - echo "Copying files to output directory..."
+      - mkdir -p build
+      - cp index.html build/
+      - cp -r * build/ || true
+
+artifacts:
+  files:
+    - '**/*'
+  base-directory: build
